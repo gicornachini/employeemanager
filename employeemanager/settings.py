@@ -55,6 +55,7 @@ MY_APPS = [
 
 EXTERNAL_APPS = [
     'fixture_magic',
+    'rest_framework',
 ]
 
 INSTALLED_APPS = INSTALLED_APPS + MY_APPS + EXTERNAL_APPS
