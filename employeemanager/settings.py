@@ -53,7 +53,9 @@ MY_APPS = [
     'employees',
 ]
 
-EXTERNAL_APPS = []
+EXTERNAL_APPS = [
+    'fixture_magic',
+]
 
 INSTALLED_APPS = INSTALLED_APPS + MY_APPS + EXTERNAL_APPS
 
@@ -136,3 +138,14 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
+
+REST_FRAMEWORK = {
+    'DEFAULT_RENDERER_CLASSES': (
+        'rest_framework.renderers.JSONRenderer',
+    ),
+    'DEFAULT_PARSER_CLASSES': (
+        'rest_framework.parsers.JSONParser',
+        'rest_framework.parsers.FormParser',
+        'rest_framework.parsers.MultiPartParser'
+    )
+}
