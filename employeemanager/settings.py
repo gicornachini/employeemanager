@@ -39,6 +39,24 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 ]
 
+
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+]
+
+MY_APPS = [
+    'employees',
+]
+
+EXTERNAL_APPS = []
+
+INSTALLED_APPS = INSTALLED_APPS + MY_APPS + EXTERNAL_APPS
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
