@@ -19,4 +19,4 @@ After clone/download, do:
 
 3. Run ``` python manage.py runserver ```
 
-4. Open <a href='http://localhost:8000/employee/'>http://localhost:8000/employee/</a> or run in the terminal ```curl -H "Content-Type: application/javascript" http://localhost:8000/employee/list/ ```
+4. Open <a href='http://localhost:8000/employee/'>http://localhost:8000/employee/</a> or run in the terminal ```curl -H "Content-Type: application/javascript" http://localhost:8000/employee/ ```
